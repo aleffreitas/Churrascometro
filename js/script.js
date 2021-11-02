@@ -2,34 +2,32 @@ let quantidadeAdultos = document.getElementById('totalAdultos');
 let quantidadeCriancas = document.getElementById('totalCriancas');
 let duracaoChurrasco = document.getElementById('duracao');
 
-let carne = 0.400; // + 6 horas = 650
-let cerveja = 1200; // + 6 horas = 2000
-let refriAgua = 1000; // + 6 horas = 1500
-
-//criança vale 0.5
-
-
-
 function calcular(){
+    
+    let carne = 0.400;
+    let cerveja = 1200;
+    let refriAgua = 1;
+
     let crianca = Number(quantidadeCriancas.value) * 0.5;
-    let adulto = Number(quantidadeAdultos.value);
-    let duracao = Number(duracaoChurrasco.value);
+    let adulto = Number(quantidadeAdultos.value);    
 
-    if(duracao > 6){
-        carne = 0.650;
-        cerveja = 2000;
-        refriAgua = 1500;
+    if(crianca == 0 || adulto == 0 || duracaoChurrasco.value == 0){
+        alert('Preencha os campos antes de calcular.')
+    }else{        
+
+        if(duracaoChurrasco.value > 6){
+            carne = 0.650;
+            cerveja = 2000;
+            refriAgua = 1.5;
+        }
+
+        carne *= (crianca + adulto);
+        cerveja *= adulto;
+        refriAgua *= (crianca + adulto);
+
+        document.getElementById('totalCarne').innerHTML = `${Math.ceil(carne)} Kg de Carne`;
+        document.getElementById('totalCerveja').innerHTML = `${Math.ceil((cerveja/350)).toFixed(0)} latinhas de Cerveja`;
+        document.getElementById('totalRefri').innerHTML = `${Math.ceil((refriAgua/2))} garrafas de 2L de Refrigerante`;
+        document.getElementById('totalAgua').innerHTML = `${Math.ceil((refriAgua/2))} garrafas de 2L de Água`;
     }
-
-    carne *= (crianca + adulto);
-    cerveja *= adulto;
-    refriAgua *= (crianca + adulto);
-
-    console.log(crianca);
-    console.log(adulto);
-    console.log(carne.toFixed(1));
-    console.log(cerveja);
-    console.log(refriAgua);
 }
-
-
