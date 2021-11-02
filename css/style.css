@@ -3,37 +3,101 @@
     margin: 0;
 }
 
-.container {
-    width: 300px;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 40px auto 40px auto;
-    border: 1px solid ;
-    border-radius: 10px;
-
+:root{
+    --red: #FA594B;
+    --line: rgb(230, 230, 230);
+    --title: #1a202c;
 }
 
-.container h1 {
-    font-size: 36px;
-    display: inline-block;
+body {
+    background-color: #fdf6ed;
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerTop {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.container {
+    background-color: #fff;
+    width: 320px;
+    margin-left: auto;
+    margin-top: 70px;
+    margin-bottom: auto;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid var(--red);
+    border-radius: 30px;
+}
+
+.container > h1{
+    font-size: 33px;
+    color: var(--title);
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: var(--red);
 }
 
 .insert{
     text-align: center;
-    padding: 10px;
+    box-sizing: border-box;
     width: 90%;
-    margin: 10px auto;
-    border: 1px solid ;
+    padding: 8px;
+    margin: 5px auto;
+    border: 1px solid var(--line);
     border-radius: 10px;
-
+    font-size: 20px;
 }
 
 .calc{
-    width: 45%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid;
+    background: var(--red);
+    color: #fff;
+    width: 90%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid;
     margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.peoples{
+    margin-top: 100px;
+    margin-left: 30px;
+    width: 90%;
+}
+
+.peoples img {
+    width: 100%;
+}
+
+.resultado{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 0.8fr 3fr;
+    
+}
+
+.icons{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.resultado h2{
+    font-size: 17px;
+    display: inline-block;    
+}
+
+.child{
+    position: relative;
+    top: 80%;
+    transform: translateY(-50%);
 }

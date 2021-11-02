@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Churrascometro</title>
+    <title>Churrascômetro</title>
 </head>
 <body>
-    <section class="infos">
-        <div class="container">
-            <h1>Churrascometro</h1>
+    <section class="containerTop">        
+            <div class="container">
+                <h1>Churrascômetro</h1>
 
-            <input type="number" class="insert" id="totalAdultos" placeholder="Adultos">
-            <input type="number" class="insert" id="totalCriancas" placeholder="Crianças">
-            <input type="number" class="insert" id="duracao" placeholder="Duração (Hrs)">
-            <input type="button" class="calc" value="Calcular" onclick="calcular()">        
-        </div>
+                <input type="number" class="insert" id="totalAdultos" placeholder="Quantidade de Adultos">
+                <input type="number" class="insert" id="totalCriancas" placeholder="Quantidade de Crianças">
+                <input type="number" class="insert" id="duracao" placeholder="Duração do Churrasco (Hrs)">
+                <input type="button" class="calc" value="Calcular" onclick="calcular()">
+                
+                <div id="final" class="resultado">
+                    <img class="icons" src="./images/bife.png" alt="bife"><h2 id="totalCarne" class="child"></h2>
+                    <img class="icons" src="./images/cerveja.png" alt="cerveja"> <h2 id="totalCerveja" class="child"></h2>
+                    <img class="icons" src="./images/refrigerante.png" alt="refrigerante"> <h2 id="totalRefri" class="child"></h2>
+                    <img class="icons" src="./images/agua.png" alt="agua"> <h2 id="totalAgua" class="child"></h2>                    
+                </div>
+            </div>
+
+            <div class="peoples">
+                <img src="./images/peoples.png" alt="Imagem Pessoas">
+            </div>
     </section>
 
-        <div class="resultado">
-            <h2 id="totalCarne"></h2>
-            <h2 id="totalCerveja"></h2>
-            <h2 id="totalRefri"></h2>
-            <h2 id="totalAgua"></h2>
-        </div>
+        
 
     <script src="./js/script.js" ></script>    
 </body>
