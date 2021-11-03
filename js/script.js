@@ -25,7 +25,8 @@ function calcular(){
         carne *= (crianca + adulto);
         cerveja *= adulto;
         refriAgua *= (crianca + adulto);
-        
+
+        document.getElementById('bora').innerHTML = 'Bora para o Churras tchê! Você irá precisar de:';        
         document.getElementById('totalCarne').innerHTML = `${Math.ceil(carne)} Kg de Carne`;
         document.getElementById('totalCerveja').innerHTML = `${Math.ceil((cerveja/350))} latinhas de Cerveja`;
         document.getElementById('totalRefri').innerHTML = `${Math.ceil((refriAgua/2))} garrafas de 2L de Refri`;

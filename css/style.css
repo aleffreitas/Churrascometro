@@ -53,6 +53,15 @@ input:focus {
     font-size: 20px;
 }
 
+#bora{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
 .calc{
     background: var(--red);
     color: #fff;
@@ -61,7 +70,7 @@ input:focus {
     border-radius: 10px;
     border: 2px solid;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 30px;
     font-weight: 700;
 }
@@ -73,7 +82,7 @@ input:focus {
 }
 
 .peoples img {
-    width: 100%;
+    width: 90%;
 }
 
 .resultado{
@@ -82,8 +91,7 @@ input:focus {
     margin-right: auto;
     text-align: left;
     display: grid;
-    grid-template-columns: 0.8fr 3fr;
-    
+    grid-template-columns: 0.8fr 3fr;    
 }
 
 .icons{
@@ -92,12 +100,67 @@ input:focus {
 }
 
 .resultado h2{
-    font-size: 17px;
-    display: inline-block;    
+    font-size: 17px;  
 }
 
 .child{
     position: relative;
     top: 80%;
     transform: translateY(-50%);
+}
+
+@media screen and (max-width:768px){
+
+    .containerTop {
+        display: block;
+    }
+
+    .container {
+        margin-top: 40px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+
+    .peoples{        
+        width: 90%;
+        margin-top: 30px;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width:425px){
+    
+    .container > h1{
+        font-size: 30px;
+    }
+
+    .calc{
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .icons{
+        width: 40px;
+    }
+
+    .resultado h2{
+        font-size: 14px;  
+    }
+
+    .peoples{        
+        width: 90%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:375px){
+    
+    .container > h1{
+        font-size: 28px;
+    }
+
+    .insert{
+        font-size: 16px;
+    }
 }
