@@ -23,9 +23,10 @@
 
 ---
 
-### Teste
 <h3 align="left">Que tal você testar esse Projeto?</h3>
-- [Basta Clicar Aqui!](https://aleffreitas.github.io/Churrascometro/)
 
+- [Clique Aqui para Testar!](https://aleffreitas.github.io/Churrascometro/)
+
+---
 
 Made with ❤️ by Alef Freitas 👋 [See my Linkedin](https://br.linkedin.com/in/aleffreitas)
