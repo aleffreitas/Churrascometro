@@ -120,7 +120,39 @@ input:focus {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-    }    
+    }
+
+    .container > h1{
+        font-size: 64px;
+    }
+    
+    .insert{
+        padding: 15px;
+        font-size: 30px;
+    }
+
+    .calc{
+        padding: 15px;
+        font-size: 40px;
+    }
+
+    #bora{
+        width: 80%;
+        font-size: 32px;
+    }
+
+    .icons{
+        width: 70px;
+        margin-bottom: 10px;
+    }
+
+    .resultado{
+        margin-left: 70px;
+    }
+    
+    .resultado h2{
+        font-size: 28px;  
+    }
 
     .peoples{        
         width: 90%;
@@ -129,10 +161,18 @@ input:focus {
     }
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:426px){
     
+    .container {
+        width: 80%;
+    } 
     .container > h1{
         font-size: 30px;
+    }
+
+    .insert{
+        padding: 8px;
+        font-size: 20px;
     }
 
     .calc{
@@ -140,13 +180,23 @@ input:focus {
         font-weight: 500;
     }
 
-    .icons{
-        width: 40px;
+    #bora{
+        width: 90%;
+        font-size: 18px;
     }
 
-    .resultado h2{
-        font-size: 14px;  
+    .icons{
+        width: 40px;
+        margin-bottom: 10px;
     }
+    
+    .resultado{
+        margin-left: auto;
+    }  
+
+    .resultado h2{
+        font-size: 17px;  
+    }     
 
     .peoples{        
         width: 90%;
@@ -154,7 +204,7 @@ input:focus {
     }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:376px){
     
     .container > h1{
         font-size: 28px;
@@ -163,4 +213,15 @@ input:focus {
     .insert{
         font-size: 16px;
     }
+
+    .resultado h2{
+        font-size: 16px;  
+    }    
+}
+
+@media screen and (max-width:321px){
+    
+    .resultado h2{
+        font-size: 14px;  
+    }    
 }
