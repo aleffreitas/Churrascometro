@@ -13,7 +13,7 @@ function calcular(){
     let adulto = Number(quantidadeAdultos.value);    
 
     if(crianca < 0 || adulto == "" || duracaoChurrasco.value == 0){
-        alert('Preencha os campos antes de calcular.')
+        alert('Preencha os campos antes de calcular.');
     }else{        
 
         if(duracaoChurrasco.value > 6){
