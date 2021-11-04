@@ -42,6 +42,10 @@ input:focus {
     border-color: var(--red);
 }
 
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
 .insert{
     text-align: center;
     box-sizing: border-box;
